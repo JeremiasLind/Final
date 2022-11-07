@@ -1,0 +1,225 @@
+
+/*GENERAL*/
+p {
+    border: 5px solid transparent;
+    width: auto;
+}
+.logo{
+    border: 5px solid white;
+    width: 150px;
+    margin-left: 45%;
+    margin-right: 25%;
+}
+.title{
+    border: 5px solid transparent;
+    width: auto;
+    margin-left: 40%;
+}
+.payoff{
+    border: 5px solid transparent;
+    width: auto;
+    margin-left: 43%;
+}
+header{
+    position: static;
+    border: 100% solid white;
+    background-color: #c40;
+    clear: both;
+}
+footer{
+    border: 5px solid transparent;
+    clear: both;
+}
+.cookies{
+    border: 5px solid transparent;
+    float: right; 
+    width: 300px;
+    background-color: #fa0;
+    opacity: 50%;
+    color: #fff;
+    z-index: 9999;
+    box-sizing: border-box;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.studentName{ 
+    border: 5px solid transparent;
+    width: 300px;
+}
+
+
+/*INDEX*/
+#indexVideo{
+    border: 10px solid transparent;
+}
+#videoSection{
+    width: 100%;
+    border: 10px solid #fa0;
+    height: 610px;
+}
+.indexImage{
+    border: 5px solid transparent;
+    float: right;
+    display: flex;
+    width: 370px;
+    height: 275px;
+    clear: both;
+}
+.indexArticle{
+    border: 5px solid transparent;
+    float: left;
+    display: grid;
+    height: auto;
+}
+#mainSection{
+    border: 10px solid transparent;
+    width: auto;
+    float: left;
+    background-color: #fa0;
+    width: 75%;
+}
+#containerOne{
+    border: 10px solid rebeccapurple;
+    width: auto;
+    display: grid;
+    background-color: #fa0;
+}
+.containerTwo{
+    border: 10px solid red;
+    width: auto;
+    display: grid;
+}
+.containerThree{
+    border: 10px solid rebeccapurple;
+    width: auto;
+    display: grid;
+}
+.asideList{
+    width: 20%;
+    border: 5px solid rgb(194, 69, 69);
+    float: right;
+    gap: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+
+/*PRODUCT*/
+.asideProduct{
+    border: 10px solid rgb(232, 7, 7);
+    flex-shrink: 0;
+    flex-grow: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.mainProduct{
+    border: 5px solid rgb(42, 17, 181);
+    gap: 1em;
+}
+.productp1{
+    border: 1px solid red;
+    width:30%;
+}
+.productp2{
+    border: 1px solid red;
+    float: left;
+    clear: left;
+    width: 30%;
+}
+.productp3{
+    border: 1px solid red;
+    width:30%;
+    float: right;
+}
+.productp4{
+    border: 1px solid red;
+    width:30%;
+    float: right;
+    clear: right;
+}
+.productp5{
+    border: 1px solid red;
+    float: left;
+    clear: left;
+    width:30%;
+}
+.productp6{
+    border: 1px solid red;
+    width:30%;
+}
+
+
+/*PRICING*/
+.pricingTable{
+    table-layout: fixed;
+    border: 1px solid black;
+}
+.pricingAside{
+    border: 5px solid black;
+    width: 500px;
+    float: right;
+}
+.pricingMain{
+    border: 5px solid red;
+    width: 700px;
+    float: left;
+}
+                                       
+
+/*CONTACT*/
+.asideContact{
+    border: 5px solid black;
+    width: 500px;
+    float: right;
+}
+.contactForm{
+    border: 5px solid red;
+    width: 700px;
+    float: left;
+}
+
+
+
+
+
+
+/*TABLET*/
+@media (max-width: 1279px) and (min-width: 481px){
+    /*INDEX*/
+    
+    .indexArticle{
+        float: right;
+    }
+    .indexImage{
+        float: left;
+    }
+    .asideList{
+        /*use positions*/
+    }
+    #mainSection{
+        border: 100% solid white;
+        width: auto;
+    } 
+    #blazepodArticle{
+        
+    }
+    #rayArticle{
+        
+    }
+    #haloArticle{
+        
+    }
+    .indexArticle{
+        border: 5px solid transparent;
+        display: grid;
+        clear: both;
+        width: auto;
+    }
+}
+/*MOBILE*/
+
+@media (max-width: 480px){
+    #videoSection{
+        display: none;
+    }
+}
