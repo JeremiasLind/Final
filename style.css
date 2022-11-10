@@ -1,8 +1,29 @@
-
+                                                    /*PC*/
+@media (min-width: 1280px) {
 /*GENERAL*/
+table,th,td{
+    width: 100px;
+    border: 2px solid #000;
+}
+.picture{
+    max-width: 100%;
+    height: auto;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+}
 p {
     border: 5px solid transparent;
     width: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 1px;
 }
 .logo{
     border: 5px solid white;
@@ -42,28 +63,30 @@ footer{
     position: fixed;
     right: 0;
     bottom: 0;
+    line-height: normal;
 }
 .studentName{ 
     border: 5px solid transparent;
     width: 300px;
 }
 
-
 /*INDEX*/
 #indexVideo{
     border: 10px solid transparent;
 }
+#videoSectionOGG{
+    display: none;
+}
 #videoSection{
-    width: 100%;
+    width: 98%;
     border: 10px solid #fa0;
-    height: 610px;
+    height: auto;
 }
 .indexImage{
-    border: 5px solid transparent;
+    border: 1px solid transparent;
     float: right;
-    display: flex;
-    width: 370px;
-    height: 275px;
+    width: 400px;
+    height: 325px;
     clear: both;
 }
 .indexArticle{
@@ -96,58 +119,50 @@ footer{
     display: grid;
 }
 .asideList{
-    width: 20%;
-    border: 5px solid rgb(194, 69, 69);
+    width: 22%;
+    border: 5px solid #fff;
     float: right;
     gap: 1em;
     flex-shrink: 0;
     flex-grow: 0;
 }
-
+#asideListTop{
+    display: none;
+}
 
 /*PRODUCT*/
 .asideProduct{
     border: 10px solid rgb(232, 7, 7);
     flex-shrink: 0;
     flex-grow: 0;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .mainProduct{
-    border: 5px solid rgb(42, 17, 181);
+    border: 5px solid transparent;
     gap: 1em;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-auto-rows: auto;
 }
 .productp1{
-    border: 1px solid red;
-    width:30%;
+    border: 1px solid transparent;
 }
 .productp2{
-    border: 1px solid red;
-    float: left;
-    clear: left;
-    width: 30%;
+    border: 1px solid transparent;
 }
 .productp3{
-    border: 1px solid red;
-    width:30%;
-    float: right;
+    border: 1px solid transparent;
 }
 .productp4{
-    border: 1px solid red;
-    width:30%;
-    float: right;
-    clear: right;
+    border: 1px solid transparent; 
 }
 .productp5{
-    border: 1px solid red;
-    float: left;
-    clear: left;
-    width:30%;
+    border: 1px solid transparent;
 }
 .productp6{
-    border: 1px solid red;
-    width:30%;
+    border: 1px solid transparent;
 }
-
 
 /*PRICING*/
 .pricingTable{
@@ -160,66 +175,417 @@ footer{
     float: right;
 }
 .pricingMain{
-    border: 5px solid red;
+    border: 5px solid transparent;
     width: 700px;
     float: left;
 }
                                        
-
 /*CONTACT*/
 .asideContact{
+    border: 5px solid transparent;
+    width: 30%;
+    float: right;
+    height: auto;
+}
+.contactForm{
+    border: 5px solid transparent;
+    width: 50%;
+    float: left;
+}
+}
+
+
+                                                    /*TABLET*/
+@media (max-width: 1279px) and (min-width: 481px){
+    /* TABLET GENERAL*/
+.picture{
+    max-width: 100%;
+    height: auto;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+p {
+    border: 5px solid transparent;
+    width: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 1px;
+}
+#hamburgerMenu{
+    display: none;
+}
+.logo{
+    border: 5px solid white;
+    width: 150px;
+    margin-left: 45%;
+    margin-right: 25%;
+}
+.title{
+    border: 5px solid transparent;
+    width: auto;
+    margin-left: 40%;
+}
+.payoff{
+    border: 5px solid transparent;
+    width: auto;
+    margin-left: 43%;
+}
+header{
+    position: static;
+    border: 100% solid white;
+    background-color: #c40;
+    clear: both;
+}
+footer{
+    border: 5px solid transparent;
+    clear: both;
+}
+.cookies{
+    border: 5px solid transparent;
+    float: right; 
+    width: 300px;
+    background-color: #fa0;
+    opacity: 50%;
+    color: #fff;
+    z-index: 9999;
+    box-sizing: border-box;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    line-height: normal;
+}
+.studentName{ 
+    border: 5px solid transparent;
+    width: 300px;
+}
+
+/* TABLET INDEX*/
+#indexVideo{
+    border: 10px solid transparent;
+}
+#videoSection{
+    display: none;
+}
+#videoSectionOGG{
+    width: 100%;
+    border: 10px solid #fa0;
+    height: 420px;
+}
+.indexImage{
+    border: 1px solid transparent;
+    float: left;
+    width: 400px;
+    height: 325px;
+    clear: both;
+}
+.indexArticle{
+    border: 5px solid transparent;
+    float: right;
+    display: grid;
+    height: auto;
+
+    clear: both;
+    width: auto;
+}
+#mainSection{  
+    border: 100% solid rgb(216, 27, 27);
+    width: 100%;
+    background-color: #fa0;
+}
+#containerOne{
+    border: 10px solid rebeccapurple;
+    width: auto;
+    display: grid;
+    background-color: #fa0;
+}
+.containerTwo{
+    border: 10px solid red;
+    width: auto;
+    display: grid;
+}
+.containerThree{
+    border: 10px solid rebeccapurple;
+    width: auto;
+    display: grid;
+}
+.asideList{
+    display: none;
+}
+#asideListTop{
+    width: 100%;
+    border: 5px solid rgb(194, 69, 69);
+    display: grid;
+    gap: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+/* TABLET PRODUCT*/
+.asideProduct{
+    border: 10px solid rgb(232, 7, 7);
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#producthaloimage{
+    display: none;
+}
+.mainProduct{
+    border: 5px solid transparent;
+    gap: 1em;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-auto-rows: auto;
+}
+.productp1{
+    border: 1px solid transparent;
+}
+.productp2{
+    border: 1px solid transparent;
+}
+.productp3{
+    border: 1px solid transparent;
+}
+.productp4{
+    border: 1px solid transparent;
+}
+.productp5{
+    border: 1px solid transparent;
+}
+.productp6{
+    border: 1px solid transparent;
+}
+
+/*TABLET PRICING*/
+.pricingTable{
+    table-layout: fixed;
+    border: 1px solid black;
+    width: 100%;
+}
+.pricingAside{
     border: 5px solid black;
-    width: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#productBlazepodImage{
+    display: none;
+}
+.pricingMain{
+    border: 5px solid transparent;
+    width: 100%;
+    clear: both;
+}                                       
+
+/*TABLET CONTACT*/
+.asideContact{
+    border: 5px solid transparent;
+    width: 30%;
     float: right;
 }
 .contactForm{
-    border: 5px solid red;
-    width: 700px;
+    border: 5px solid transparent;
+    width: 50%;
     float: left;
+}
+textarea{
+    width: 50%;
+}
+
 }
 
 
-
-
-
-
-/*TABLET*/
-@media (max-width: 1279px) and (min-width: 481px){
-    /*INDEX*/
+                                                        /*MOBILE*/
     
-    .indexArticle{
-        float: right;
+@media screen and (max-width: 480px){
+    .picture{
+        max-width: 100%;
+        height: auto;
     }
-    .indexImage{
+    .navigation{
+        z-index: 2;
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+    p {
+        border: 5px solid transparent;
+        width: auto;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-indent: 1px;
+    }
+    .logo{
+        display: none;
+    }
+    .title{
+        border: 5px solid transparent;
+        width: 50%;
         float: left;
     }
-    .asideList{
-        /*use positions*/
-    }
-    #mainSection{
-        border: 100% solid white;
+    .payoff{
+        border: 5px solid transparent;
         width: auto;
-    } 
-    #blazepodArticle{
-        
+        float: left;
     }
-    #rayArticle{
-        
+    header{
+        border: 1px solid transparent;
+        background-color: #c40;
+        width: 100%;
+        display: grid;
     }
-    #haloArticle{
-        
+    footer{
+        border: 5px solid transparent;
+        clear: both;
+    }
+    .cookies{
+        border: 5px solid transparent;
+        float: right; 
+        width: 300px;
+        background-color: #fa0;
+        opacity: 50%;
+        color: #fff;
+        z-index: 9999;
+        box-sizing: border-box;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        line-height: normal;
+    }
+    .studentName{ 
+        border: 5px solid transparent;
+        width: 300px;
+    }
+    
+    /* MOBILE INDEX*/
+    #indexVideo{
+        display: none;
+    }
+    #videoSection{
+        display: none;
+    }
+    #videoSectionOGG{
+        display: none;
+    }
+    .indexImage{
+        border: 1px solid transparent;
+        float: right;
+        width: 400px;
+        height: 325px;
+        clear: both;
     }
     .indexArticle{
         border: 5px solid transparent;
+        float: right;
         display: grid;
+        height: auto;
         clear: both;
         width: auto;
     }
-}
-/*MOBILE*/
-
-@media (max-width: 480px){
-    #videoSection{
+    #mainSection{  
+        border: 100% solid white;
+        float: left;
+        background-color: #fa0;
+        width: 100%;
+        display: grid;
+    }
+    #containerOne{
+        border: 10px solid #831;
+        width: 100%;
+        display: grid;
+        background-color: #fa0;
+    }
+    .containerTwo{
+        border: 10px solid #434;
+        width: 100%;
+        display: grid;
+        background-color: #fa0;
+    }
+    .containerThree{
+        border: 10px solid #d91;
+        width: 100%;
+        display: grid;
+        background-color: #fa0;
+    }
+    .asideList{
         display: none;
+    }
+    #asideListTop{
+        width: 100%;
+        border: 5px solid rgb(194, 69, 69);
+        display: grid;
+        gap: 1em;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+    
+    /* MOBILE PRODUCT*/
+    .asideProduct{
+        border: 10px solid rgb(232, 7, 7);
+        flex-shrink: 0;
+        flex-grow: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .mainProduct{
+        border: 5px solid transparent;
+    }
+    .productp1{
+        border: 1px solid transparent;
+    }
+    .productp2{
+        border: 1px solid transparent;
+    }
+    .productp3{
+        border: 1px solid transparent;
+    }
+    .productp4{
+        border: 1px solid transparent;
+    }
+    .productp5{
+        border: 1px solid transparent;
+    }
+    .productp6{
+        display: none;
+    }
+    
+    /*MOBILE PRICING*/
+    .pricingTable{
+        table-layout: fixed;
+        border: 1px solid black;
+        clear: both;
+        width: 100%;
+    }
+    .pricingAside{
+        border: 5px solid black;
+        width: 500px;
+        float: right;
+    }
+    .pricingMain{
+        border: 5px solid transparent;
+        width: 100%;
+        float: left;
+    }                                       
+    
+    /*MOBILE CONTACT*/
+    .asideContact{
+        border: 1px solid transparent;
+        width: 100%;
+        float: left;
+    }
+    .contactForm{
+        border: 5px solid transparent;
+        width: 100%;
+        float: left;
+    }
+    textarea{
+        width: 90%;
     }
 }

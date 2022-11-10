@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset = "utf-8"/>
         <meta name="author" content="Jeremias Lindenmann">
-        <link href="style.css" type="text/css" rel="stylesheet"> <!--do I need rel?-->
+        <title>index.html</title>
+        <link href="style.css" type="text/css" rel="stylesheet"> 
     </head>
     <header>
-        <svg class="logo"><!--this is my logo maybe in css forlder???-->
+        <svg class="logo">
             <circle id="left ear" cx="35" cy="30" r="16" stroke = "black" fill = "black"/>
             <circle id="right ear" cx="110" cy="30" r="16" stroke = "black" fill = "black"/>
             <circle id="face" cx="75" cy="65" r="50" stroke = "black" fill = "white"/>
             <circle id="left eye" cx="55" cy="50" r="16" stroke = "black" fill = "black"/>
             <circle id="right eye" cx="90" cy="50" r="16" stroke = "black" fill = "black"/>
-            <!--create nose--> 
         </svg>
         <h1 class="title">Panda-Sports-Innovation</h1>
         <h2 class="payoff">strength and patience</h2>
         <nav class = "navigation">
-            <ul>
+            <ul class="nav">
                 <li>
-                    <a href="file:///C:/Users/Jeremias/Documents/GitHub/Final/index.html">
+                    <a href="index.html">
                         Home
                     </a>
                 </li>
                 <li>
-                    <a href="file:///C:/Users/Jeremias/Documents/GitHub/Final/product.html">
+                    <a href="product.html">
                         Product
                     </a>
                 </li>
                 <li>
-                    <a href="file:///C:/Users/Jeremias/Documents/GitHub/Final/pricing.html">
+                    <a href="pricing.html">
                         Pricing
                     </a>
                 </li>
                 <li>
-                    <a href="file:///C:/Users/Jeremias/Documents/GitHub/Final/contact.html">
+                    <a href="contact.html">
                         Contact
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
+    <aside id="asideListTop">
+        <h2>New trends in the sports innovation</h2><!--can I use this header?? grow shrink = 0-->
+        <ol>
+            <li>electric bikes</li>
+            <li>workouts done at home </li>
+            <li>decline in team sports</li>
+            <li>more collaberation with food/drink industry</li>
+            <li>smart gym equiptment</li>
+        </ol>
+    </aside>
     <body>
         <section id="videoSection">
-            <video width="800px" height="600px" autoplay muted id="indexVideo"> 
+            <video width="600px" height="400px" autoplay muted id="indexVideo"> 
+                <source src="video/Y2Mate.is - BlazePod -720p.mp4" type="video/mp4">
+            </video> 
+        </section>
+        <section id="videoSectionOGG">
+            <video width="600px" height="400px" autoplay muted id="indexVideo"> 
                 <source src="video/Y2Mate.is - BlazePod -720p.mp4" type="video/mp4">
                 <source src="video/OGG-BlazePod-720p.ogg" type="video/ogg">
             </video> 
@@ -53,8 +69,8 @@
             <article id="blazepodArticle">
                 <span class="indexArticle">
                     <h2>The blazepod</h2>
-                    <p><em>blazepod emphasized</em> this is the new way of making your workouts more effective by making them more enjoyable. With blazepody you wont be thinking about not getting a workout session done.  
-                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum iste laudantium nemo aliquam atque corporis porro autem sequi, animi error deserunt dolores, illo tenetur consequuntur, maxime aut quasi asperiores? Ab. 
+                    <p><em>Blazepod </em> is the new way of making your workouts more effective by making them more enjoyable. With blazepody you wont be thinking about not getting a workout session done.  
+                        The blazepod is a relativly new invention, and therefore it does not yet have any competetors. On the downside this allows blazepod to use their monopoly on this market neiche. This made blazepod incredibly expensive, limiting the consumber base of this new tech. 
                     </p>
                     <p>
                         <a href="https://blazepod.eu/?gclid=CjwKCAjw-rOaBhA9EiwAUkLV4hHAAwgyIeZb2KBuRT_d6NteweXznYYU2ckuaoiLFDATpz9eXl1KphoCLPoQAvD_BwE">
@@ -65,7 +81,10 @@
                 </span>
                 <span class="indexImage">
                     <a href="file:///C:/Users/Jeremias/Documents/GitHub/Final/product.html">
-                        <img src="images/blazepod.jpg"/>
+                        <figure>
+                            <img src="images/blazepod.jpg" alt="image of blazepod" title="blazepod" class="picture">
+                            <figcaption>image of blazepod</figcaption>
+                        </figure>
                     </a>
                 </span>
             </article>
@@ -74,8 +93,8 @@
             <article id="rayArticle">
                 <span class="indexArticle">
                     <h2>The Ray gun</h2>
-                    <p>this is the new way of making your workouts more effective by making them more enjoyable. With blazepody you wont be thinking about not getting a workout session done.  
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum iste laudantium nemo aliquam atque corporis porro autem sequi, animi error deserunt dolores, illo tenetur consequuntur, maxime aut quasi asperiores? Ab. 
+                    <p>This hand held <em>ray-gun</em> is a innovation in the recent decade. This tech allows people to measure the speed of objects such as balls which are flying through the air.
+                        This makes it easier for football players and baseball players to see if they are improving their skills. Now these athletes can measure their skill and prove it with recorded data. This device also comes in different modes, including non hand-held versions.  
                     </p>
                     <p>   
                         <a href="https://bleacherreport.com/articles/725642-top-ten-technolgical-innovations-in-sports">
@@ -86,8 +105,10 @@
                 </span>
                 <span class="indexImage">
                     <a href="file:///C:/Users/Jeremias/Documents/GitHub/Final/product.html">
-                        <img src="images/raygun.jpg"/>
-                        
+                        <figure>
+                            <img src="images/raygun.jpg" alt="image of raygun" title="raygun" class="picture">
+                            <figcaption>image of raygun</figcaption>
+                        </figure>
                     </a>
                 </span>
             </article>
@@ -96,8 +117,8 @@
             <article id="haloArticle">
                 <span class="indexArticle">
                     <h2>The Halo</h2>
-                    <p>this is the new way of making your workouts more effective by making them more enjoyable. With blazepody you wont be thinking about not getting a workout session done.  
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum iste laudantium nemo aliquam atque corporis porro autem sequi, animi error deserunt dolores, illo tenetur consequuntur, maxime aut quasi asperiores? Ab. 
+                    <p>The <em>f1 Halo</em> is the most important of the new innovations on this list. It is a safety measure for formula one race drivers. It is named after the angelic halo ring due to its looks and functions
+                        Its only purpose is to protect the head of the driver in the case that the vehicle is going to flip.  
                     </p>
                     <p>   
                         <a href="https://de.wikipedia.org/wiki/Halo-System">
@@ -108,7 +129,10 @@
                 </span>
                 <span class="indexImage">
                     <a href="file:///C:/Users/Jeremias/Documents/GitHub/Final/product.html">
-                        <img src="images/halo.jpg"/>
+                        <figure>
+                            <img src="images/halo.jpg" alt="image of f1 halo" title="f1 halo" class="picture">
+                            <figcaption>image of f1 halo</figcaption>
+                        </figure>
                     </a>                   
                 </span>
             </article>
@@ -126,7 +150,6 @@
     </aside>
     </body>
     <footer>
-         <!--is this the correct place? box?-->
         <p class="studentName">
             &copy;Jeremias Lindenmann 2022
         </p>
