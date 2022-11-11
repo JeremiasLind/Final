@@ -7,48 +7,46 @@
         <meta name="author" content="Jeremias Lindenmann">
         <link href="style.css" type="text/css" rel="stylesheet">
     </head>
-    <header>
-        <!--add the logo, via css?-->
-        <svg class="logo"><!--this is my logo maybe in css forlder???-->
-            <circle id="left ear" cx="35" cy="30" r="16" stroke = "black" fill = "black"/>
-            <circle id="right ear" cx="110" cy="30" r="16" stroke = "black" fill = "black"/>
-            <circle id="face" cx="75" cy="65" r="50" stroke = "black" fill = "white"/>
-            <circle id="left eye" cx="55" cy="50" r="16" stroke = "black" fill = "black"/>
-            <circle id="right eye" cx="90" cy="50" r="16" stroke = "black" fill = "black"/>
-            <!--create nose--> 
-        </svg>
-        <h1 class="title">Panda-Sports-Innovation</h1>
-        <h2 class="payoff">strength and patience</h2>
-        <nav class = "navigation">
-            <ul class="nav">
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="product.html">
-                        Product
-                    </a>
-                </li>
-                <li>
-                    <a href="pricing.html">
-                        Pricing
-                    </a>
-                </li>
-                <li>
-                    <a href="contact.html">
-                        Contact
-                    </a>
-                </li>  
-            </ul>
-        </nav>
-    </header>
     <body>
+        <header>
+            <svg class="logo">
+                <circle id="leftear" cx="35" cy="30" r="16" stroke = "black" fill = "black"/>
+                <circle id="rightear" cx="110" cy="30" r="16" stroke = "black" fill = "black"/>
+                <circle id="face" cx="75" cy="65" r="50" stroke = "black" fill = "white"/>
+                <circle id="lefteye" cx="55" cy="50" r="16" stroke = "black" fill = "black"/>
+                <circle id="righteye" cx="90" cy="50" r="16" stroke = "black" fill = "black"/>
+            </svg>
+            <h1 class="title">Panda-Sports-Innovation</h1>
+            <h2 class="payoff">strength and patience</h2>
+            <nav class = "navigation">
+                <ul class="nav">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="product.html">
+                            Product
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pricing.html">
+                            Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>  
+                </ul>
+            </nav>
+        </header>
         <section class="pricingMain">
-            <article>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae architecto expedita deleniti odit quaerat ipsa nesciunt, sequi itaque tempora molestias beatae, commodi esse ipsum magni fugiat laboriosam, eos ducimus pariatur?                  
-                </p> <!--not seen in mobile-->
+            <article id="pricingArticle">
+                <p>All of the three mentioned articles are quite expensice in nature. Most obviously the halo ring which is exclusive to the F1 sport. This innovation is not availiable for the public. However the blazepod and ray gun are, but they are mostly used by professionals and semi-porfessionals.                   
+                </p> 
             </article>
             <table class="pricingTable">
                 <thead>
@@ -200,34 +198,33 @@
             <p>Chase-Your-Sport&copy; 2022</p>
             <p>BlazePod&copy; 2022</p>
         </section>
+        <aside class="pricingAside"> 
+            <a href="https://www.inholland.nl/" id="productBlazepodImage">
+                <figure>
+                    <img src="images/blazepod.jpg" alt="image of blazepod" title="blazepod" class="picture">
+                    <figcaption>image of blazepod</figcaption>
+                </figure>
+            </a>
+            <a href="https://www.inholland.nl/">
+                <figure>
+                    <img src="images/raygun.jpg" alt="image of raygun" title="raygun" class="picture">
+                    <figcaption>image of raygun</figcaption>
+                </figure>
+            </a> 
+            <a href="https://www.inholland.nl/">
+                <figure>
+                    <img src="images/halo.jpg" alt="image of f1 halo" title="f1 halo" class="picture">
+                    <figcaption>image of f1 halo</figcaption>
+                </figure>
+            </a>
+        </aside>
+        <footer>
+            <p class="studentName">
+                &copy;Jeremias Lindenmann 2022
+            </p>
+            <section class="cookies">
+                Cookie statement
+            </section>
+        </footer>
     </body>
-
-    <aside class="pricingAside"> 
-        <a href="https://www.inholland.nl/" id="productBlazepodImage">
-            <figure>
-                <img src="images/blazepod.jpg" alt="image of blazepod" title="blazepod" class="picture">
-                <figcaption>image of blazepod</figcaption>
-            </figure>
-        </a>
-        <a href="https://www.inholland.nl/">
-            <figure>
-                <img src="images/raygun.jpg" alt="image of raygun" title="raygun" class="picture">
-                <figcaption>image of raygun</figcaption>
-            </figure>
-        </a> 
-        <a href="https://www.inholland.nl/">
-            <figure>
-                <img src="images/halo.jpg" alt="image of f1 halo" title="f1 halo" class="picture">
-                <figcaption>image of f1 halo</figcaption>
-            </figure>
-        </a>
-    </aside>
-    <footer>
-        <p class="studentName">
-            &copy;Jeremias Lindenmann 2022
-        </p>
-        <box class="cookies">
-            Cookie statement
-        </box>
-    </footer>
 </html>

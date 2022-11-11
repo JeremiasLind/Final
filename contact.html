@@ -7,49 +7,47 @@
         <meta name="author" content="Jeremias Lindenmann">
         <link href="style.css" type="text/css" rel="stylesheet">
     </head>
-    <header>
-        <!--add the logo, via css?-->
-        <svg class="logo"><!--this is my logo maybe in css forlder???-->
-            <circle id="left ear" cx="35" cy="30" r="16" stroke = "black" fill = "black"/>
-            <circle id="right ear" cx="110" cy="30" r="16" stroke = "black" fill = "black"/>
-            <circle id="face" cx="75" cy="65" r="50" stroke = "black" fill = "white"/>
-            <circle id="left eye" cx="55" cy="50" r="16" stroke = "black" fill = "black"/>
-            <circle id="right eye" cx="90" cy="50" r="16" stroke = "black" fill = "black"/>
-            <!--create nose--> 
-        </svg>
-        <h1 class="title">Panda-Sports-Innovation</h1>
-        <h2 class="payoff">strength and patience</h2>
-         <nav class = "navigation">
-            <ul class="nav">
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="product.html">
-                        Product
-                    </a>
-                </li>
-                <li>
-                    <a href="pricing.html">
-                        Pricing
-                    </a>
-                </li>
-                <li>
-                    <a href="contact.html">
-                        Contact
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
     <body>
+        <header>
+            <svg class="logo">
+                <circle id="leftear" cx="35" cy="30" r="16" stroke = "black" fill = "black"/>
+                <circle id="rightear" cx="110" cy="30" r="16" stroke = "black" fill = "black"/>
+                <circle id="face" cx="75" cy="65" r="50" stroke = "black" fill = "white"/>
+                <circle id="lefteye" cx="55" cy="50" r="16" stroke = "black" fill = "black"/>
+                <circle id="righteye" cx="90" cy="50" r="16" stroke = "black" fill = "black"/> 
+            </svg>
+            <h1 class="title">Panda-Sports-Innovation</h1>
+            <h2 class="payoff">strength and patience</h2>
+             <nav class = "navigation">
+                <ul class="nav">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="product.html">
+                            Product
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pricing.html">
+                            Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <fieldset class="contactForm">
+            <legend>contact form:</legend>
             <form> 
-                <legend>contact form:</legend>
                 <label>write your full name:</label> 
-                <input type="text" name="name"> <!--value= ""?-->
+                <input type="text" name="name"> 
                 <label>write your email:</label> 
                 <input type="email" name="email">
                 <textarea name="message" rows="10" cols="90">insert message here</textarea>
@@ -76,13 +74,13 @@
                 </figure>
             </a>
         </aside>
+        <footer>
+            <p class="studentName">
+                &copy;Jeremias Lindenmann 2022
+            </p>
+            <section class="cookies">
+                Cookie statement
+            </section>
+        </footer>
     </body>
-    <footer>
-        <p class="studentName">
-            &copy;Jeremias Lindenmann 2022
-        </p>
-        <box class="cookies">
-            Cookie statement
-        </box>
-    </footer>
 </html>

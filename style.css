@@ -5,6 +5,9 @@ table,th,td{
     width: 100px;
     border: 2px solid #000;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 .picture{
     max-width: 100%;
     height: auto;
@@ -43,7 +46,7 @@ p {
 }
 header{
     position: static;
-    border: 100% solid white;
+    border: 5px solid transparent;
     background-color: #c40;
     clear: both;
 }
@@ -69,7 +72,6 @@ footer{
     border: 5px solid transparent;
     width: 300px;
 }
-
 /*INDEX*/
 #indexVideo{
     border: 10px solid transparent;
@@ -129,7 +131,6 @@ footer{
 #asideListTop{
     display: none;
 }
-
 /*PRODUCT*/
 .asideProduct{
     border: 10px solid rgb(232, 7, 7);
@@ -163,7 +164,6 @@ footer{
 .productp6{
     border: 1px solid transparent;
 }
-
 /*PRICING*/
 .pricingTable{
     table-layout: fixed;
@@ -178,8 +178,7 @@ footer{
     border: 5px solid transparent;
     width: 700px;
     float: left;
-}
-                                       
+}                                    
 /*CONTACT*/
 .asideContact{
     border: 5px solid transparent;
@@ -192,9 +191,19 @@ footer{
     width: 50%;
     float: left;
 }
+a{
+    color: red;
 }
-
-
+a:hover{
+    color: red;
+}
+nav a:hover{
+    color: red;
+}
+nav a:visited{
+    color: #434;
+}
+}
                                                     /*TABLET*/
 @media (max-width: 1279px) and (min-width: 481px){
     /* TABLET GENERAL*/
@@ -239,7 +248,7 @@ p {
 }
 header{
     position: static;
-    border: 100% solid white;
+    border: 5px solid white;
     background-color: #c40;
     clear: both;
 }
@@ -265,7 +274,6 @@ footer{
     border: 5px solid transparent;
     width: 300px;
 }
-
 /* TABLET INDEX*/
 #indexVideo{
     border: 10px solid transparent;
@@ -290,28 +298,27 @@ footer{
     float: right;
     display: grid;
     height: auto;
-
     clear: both;
     width: auto;
 }
 #mainSection{  
-    border: 100% solid rgb(216, 27, 27);
+    border: 5px solid #e32;
     width: 100%;
     background-color: #fa0;
 }
 #containerOne{
-    border: 10px solid rebeccapurple;
+    border: 10px solid #bbb;
     width: auto;
     display: grid;
     background-color: #fa0;
 }
 .containerTwo{
-    border: 10px solid red;
+    border: 10px solid #e34;
     width: auto;
     display: grid;
 }
 .containerThree{
-    border: 10px solid rebeccapurple;
+    border: 10px solid #e32;
     width: auto;
     display: grid;
 }
@@ -320,16 +327,15 @@ footer{
 }
 #asideListTop{
     width: 100%;
-    border: 5px solid rgb(194, 69, 69);
+    border: 5px solid #865;
     display: grid;
     gap: 1em;
     flex-shrink: 0;
     flex-grow: 0;
 }
-
 /* TABLET PRODUCT*/
 .asideProduct{
-    border: 10px solid rgb(232, 7, 7);
+    border: 10px solid #565;
     flex-shrink: 0;
     flex-grow: 0;
     display: grid;
@@ -363,15 +369,14 @@ footer{
 .productp6{
     border: 1px solid transparent;
 }
-
 /*TABLET PRICING*/
 .pricingTable{
     table-layout: fixed;
-    border: 1px solid black;
+    border: 1px solid #000;
     width: 100%;
 }
 .pricingAside{
-    border: 5px solid black;
+    border: 5px solid #000;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -384,7 +389,6 @@ footer{
     width: 100%;
     clear: both;
 }                                       
-
 /*TABLET CONTACT*/
 .asideContact{
     border: 5px solid transparent;
@@ -399,12 +403,8 @@ footer{
 textarea{
     width: 50%;
 }
-
 }
-
-
                                                         /*MOBILE*/
-    
 @media screen and (max-width: 480px){
     .picture{
         max-width: 100%;
@@ -464,7 +464,6 @@ textarea{
         border: 5px solid transparent;
         width: 300px;
     }
-    
     /* MOBILE INDEX*/
     #indexVideo{
         display: none;
@@ -491,7 +490,7 @@ textarea{
         width: auto;
     }
     #mainSection{  
-        border: 100% solid white;
+        border: 5px solid #fff;
         float: left;
         background-color: #fa0;
         width: 100%;
@@ -526,7 +525,6 @@ textarea{
         flex-shrink: 0;
         flex-grow: 0;
     }
-    
     /* MOBILE PRODUCT*/
     .asideProduct{
         border: 10px solid rgb(232, 7, 7);
@@ -555,7 +553,6 @@ textarea{
     .productp6{
         display: none;
     }
-    
     /*MOBILE PRICING*/
     .pricingTable{
         table-layout: fixed;
@@ -564,16 +561,18 @@ textarea{
         width: 100%;
     }
     .pricingAside{
-        border: 5px solid black;
-        width: 500px;
+        border: 1px solid black;
+        max-width: 100%;
         float: right;
     }
     .pricingMain{
         border: 5px solid transparent;
         width: 100%;
         float: left;
+    }
+    #pricingArticle{
+        display: none;
     }                                       
-    
     /*MOBILE CONTACT*/
     .asideContact{
         border: 1px solid transparent;
